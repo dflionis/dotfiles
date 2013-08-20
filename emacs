@@ -1,4 +1,4 @@
-;; My attempt at Org-mode settings
+;; Activate Org Mode
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
