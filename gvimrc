@@ -17,3 +17,6 @@ autocmd BufRead *.sql set filetype=mysql
 " Open new window splits right and bottom
 set splitbelow
 set splitright
+
+" Keep all swap files in separate directory
+set directory=~/vim_swap_files/
