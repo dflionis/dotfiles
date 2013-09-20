@@ -20,3 +20,7 @@ set splitright
 
 " Keep all swap files in separate directory
 set directory=~/vim_swap_files/
+
+" Always display the status line
+" Necessary to reap benefits of Airline
+set laststatus=2

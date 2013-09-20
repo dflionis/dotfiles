@@ -5,7 +5,7 @@
 (global-font-lock-mode 1)
 
 ;; Set the font to Inconsolata (Size 13)
-(set-default-font "Inconsolata-13")
+(set-default-font "Inconsolata-14")
 
 ;; Enable Line Numbers
 (global-linum-mode t)
@@ -13,4 +13,4 @@
 ;; Color theme
 (require 'color-theme)
 (color-theme-initialize)
-(color-theme-robin-hood)
+(color-theme-midnight)
