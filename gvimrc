@@ -4,6 +4,7 @@ colorscheme koehler
 set guifont=Monospace\ 15
 set guioptions-=T "remove toolbar
 set guioptions-=m "remove menu bar
+set tabstop=2 "tab key = 2 spaces
 
 " Disable the Arrow Keys for Movement
 nnoremap <Left>  :echoe "Use h"<CR>
