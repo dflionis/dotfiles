@@ -4,7 +4,7 @@
 (global-set-key "\C-ca" 'org-agenda)
 (global-font-lock-mode 1)
 
-(set-default-font "Inconsolata-15")
+(set-default-font "Inconsolata-16")
 
 ;; Enable Line Numbers
 (global-linum-mode t)
