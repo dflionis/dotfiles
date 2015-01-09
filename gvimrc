@@ -1,9 +1,10 @@
 set number
 set nowrap
 colorscheme koehler
-set guifont=Monospace\ 15
+set guifont=Monospace\ 14
 set guioptions-=T "remove toolbar
 set guioptions-=m "remove menu bar
+set expandtab
 set tabstop=2 "tab key = 2 spaces
 
 " Disable the Arrow Keys for Movement
