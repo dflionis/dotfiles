@@ -4,12 +4,22 @@
 (global-set-key "\C-ca" 'org-agenda)
 (global-font-lock-mode 1)
 
-(set-default-font "Inconsolata-16")
+(set-default-font "Monospace 14")
 
 ;; Enable Line Numbers
 (global-linum-mode t)
 
-;; Color theme
-(require 'color-theme)
-(color-theme-initialize)
-(color-theme-midnight)
+;; Enforce newline at end of file
+(setq require-final-newline t)
+
+;; Disable Toolbar
+(tool-bar-mode -1)
+
+;; Disable Menu Bar
+(menu-bar-mode -1)
+
+;; Disable Word Wrap
+(setq-default truncate-lines 1)
+
+;; Remove Scrollbars from Splits
+(scroll-bar-mode -1)

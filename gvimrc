@@ -1,7 +1,7 @@
 set number
 set nowrap
 colorscheme koehler
-set guifont=Monospace\ 14
+set guifont=Monospace\ 12
 set guioptions-=T "remove toolbar
 set guioptions-=m "remove menu bar
 set expandtab
