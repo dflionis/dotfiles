@@ -3,8 +3,9 @@
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
 (global-font-lock-mode 1)
-
-(set-default-font "Monospace 14")
+(setq org-todo-keywords
+  '((sequence "TODO" "INPROG" "REVIEW" "|" "DONE" "DELEGATED")))
+(set-default-font "Monospace 12")
 
 ;; Enable Line Numbers
 (global-linum-mode t)
@@ -23,3 +24,6 @@
 
 ;; Remove Scrollbars from Splits
 (scroll-bar-mode -1)
+
+;; Custom Theme
+(load "/usr/share/emacs/24.4/etc/themes/manoj-dark-theme.el")
