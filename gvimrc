@@ -1,7 +1,7 @@
 set number
 set nowrap
-colorscheme abbott
-set guifont=Monospace\ 12
+"colorscheme abbott
+set guifont=Monospace\ 10
 set guioptions-=T "remove toolbar
 set guioptions-=m "remove menu bar
 set expandtab
@@ -26,3 +26,16 @@ set directory=~/vim_swap_files/
 " Always display the status line
 " Necessary to reap benefits of Airline
 set laststatus=2
+
+" Enable Pathogen
+execute pathogen#infect()
+
+" Enable Nerdtree
+autocmd vimenter * NERDTree
+
+" Close Vim if lone remaining window is NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+syntax enable
+set background=light
+colorscheme solarized
