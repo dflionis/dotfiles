@@ -26,4 +26,12 @@
 (scroll-bar-mode -1)
 
 ;; Custom Theme
-(load "/usr/share/emacs/24.4/etc/themes/manoj-dark-theme.el")
+;; Note: This will fail when your version changes. Need better solution
+(load "/usr/share/emacs/24.5/etc/themes/manoj-dark-theme.el")
+
+;; Enable copying to the system clipboard
+(setq x-select-enable-clipboard t)
+
+;; set transparency
+(set-frame-parameter (selected-frame) 'alpha '(85 85))
+(add-to-list 'default-frame-alist '(alpha 85 85))
