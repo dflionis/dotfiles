@@ -1,11 +1,13 @@
 set number
 set nowrap
-"colorscheme abbott
-set guifont=Monospace\ 10
+set guifont=Inconsolata\ 12
 set guioptions-=T "remove toolbar
 set guioptions-=m "remove menu bar
+
+" Allow the > and < commands to work for 2-space identation
 set expandtab
-set tabstop=2 "tab key = 2 spaces
+set tabstop=2
+set shiftwidth=2
 
 " Disable the Arrow Keys for Movement
 nnoremap <Left>  :echoe "Use h"<CR>
@@ -37,5 +39,5 @@ autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 syntax enable
-set background=light
-colorscheme solarized
+"set background=light
+colorscheme molokai_dark

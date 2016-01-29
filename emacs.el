@@ -32,6 +32,9 @@
 ;; Enable copying to the system clipboard
 (setq x-select-enable-clipboard t)
 
+;; Ensure Newline at EOF
+(setq require-final-newline t)
+
 ;; set transparency
-(set-frame-parameter (selected-frame) 'alpha '(85 85))
-(add-to-list 'default-frame-alist '(alpha 85 85))
+;; (set-frame-parameter (selected-frame) 'alpha '(85 85))
+;; (add-to-list 'default-frame-alist '(alpha 85 85))
